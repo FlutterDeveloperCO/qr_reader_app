@@ -24,8 +24,10 @@ class HomeScreen extends StatelessWidget {
         centerTitle: true,
         actions: [
           IconButton(
-            onPressed: () {},
             icon: Icon(Icons.delete_forever_rounded),
+            onPressed: () {
+              Provider.of<ScanListProvider>(context, listen: false).deleteAll();
+            },
           ),
         ],
       ),

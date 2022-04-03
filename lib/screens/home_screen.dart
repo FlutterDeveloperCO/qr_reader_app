@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
+//Providers
+import 'package:qr_reader/providers/scan_list_provider.dart';
 import 'package:qr_reader/providers/ui_provider.dart';
+
+//Screens
 import 'package:qr_reader/screens/history_maps_screen.dart';
 import 'package:qr_reader/screens/history_urls_screen.dart';
 
@@ -40,11 +45,15 @@ class _HomeBody extends StatelessWidget {
 
     final currentIndex = uiProvider.selectedIndex;
 
+    final scanListProvider = Provider.of<ScanListProvider>(context, listen: false);
+
     switch (currentIndex) {
       case 0:
+        scanListProvider.loadScanByType('geo');
         return HistoryMapsScreen();
 
       case 1:
+      scanListProvider.loadScanByType('http');
         return HistoryUrlsScreen();
 
       default:

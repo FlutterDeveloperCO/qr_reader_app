@@ -6,8 +6,8 @@ The first is a web page or URL address, in this case the app will take the user 
 
 In this case the app will use the Google Maps API to display the destination location through a marker. The version of SQL for Flutter has been used in order to store the scanned data locally on the device.
 
-**State Management:** Provider
-**Maps:** Google Maps
+**State Management:** Provider |
+**Maps:** Google Maps |
 **Storage** SQL
 
 ## Screenshot Reading Location QR

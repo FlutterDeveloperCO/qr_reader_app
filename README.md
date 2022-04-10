@@ -1,12 +1,19 @@
+# QR Reader App
 
+This is an app that allows you to scan QR codes and take the user to the destination. The application accepts two types of destination. 
 
-This project is a starting point for a Flutter application.
+The first is a web page or URL address, in this case the app will take the user to the destination using the default browser. The second is a location which is represented thanks to the latitude and longitude coordinates. 
 
-A few resources to get you started if this is your first Flutter project:
+In this case the app will use the Google Maps API to display the destination location through a marker. The version of SQL for Flutter has been used in order to store the scanned data locally on the device.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+**State Management:** Provider
+**Maps:** Google Maps
+**Storage** SQL
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshot Reading Location QR
+
+![Screenshot](screenshot.gif)
+
+## Screenshot Reading URL QR
+
+![Screenshot](screenshot2.gif)

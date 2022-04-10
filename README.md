@@ -8,7 +8,7 @@ In this case the app will use the Google Maps API to display the destination loc
 
 **State Management:** Provider |
 **Maps:** Google Maps |
-**Storage** SQL
+**Storage:** SQL
 
 ## Screenshot Reading Location QR
 
